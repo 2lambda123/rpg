@@ -10,9 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy project
+      - name: New Job
         run: |
-          npm deploy
+          # Add new commands here
           # Add any custom deployment commands here
       - name: Checkout code
         uses: actions/checkout@v2
