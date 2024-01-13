@@ -12,10 +12,10 @@ name: My Workflow
        steps:
          - name: Checkout code
            uses: actions/checkout@v2
-         - name: Build project
+         - name: Install and Build project
            run: |
-             npm install
-             npm run build
+             yarn install
+             yarn build
    ```
 
 3. Creating a New Workflow File:
