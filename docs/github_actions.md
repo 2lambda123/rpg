@@ -13,7 +13,13 @@ name: My Workflow
          - name: Checkout code
            uses: actions/checkout@v2
 <<<<<<< HEAD
-         - name: Install and Build project
+          - name: Build project
+            run: |
+              npm install
+              npm run build
+            run: |
+              npm install
+              npm run build
 =======
           - name: Build project
             run: |
@@ -48,7 +54,6 @@ jobs:
 ```
 
 The `jobs` section defines the jobs in the workflow. Each job has a unique name and runs on a specific runner. The `steps` section contains the individual steps to be executed within the job.
-
 ## Using Environment Variables
 Environment variables can be used to store and access data within GitHub Actions workflows. Here's how you can define and use environment variables:
 
