@@ -21,15 +21,15 @@
 ### Installation
 - Clone the repo
 
-        git clone https://github.com/mchekin/rpg.git game
+        git clone https://github.com/2lambda123/rpg.git my-rpg-game
 
 - Navigate to the project folder
 
-        cd game
+        cd my-rpg-game
 
 - Create .env file from the .env.example file
 
-        cp .env.example .env
+        cp .env.example .env.local
   
   On Windows:
   
@@ -57,7 +57,7 @@
 
 - Compile frontend assets 
 
-        npm install & npm run dev
+        npm install && npm run dev
 
 - Create a symbolic link from "public/storage" to "storage/app/public"
 
@@ -65,7 +65,7 @@
 
 - Run PHP build-in development server on the host machine
 
-        php artisan serve  
+        php -S localhost:8000 -t public  
 
 - Navigate to [http://localhost:8000/](http://localhost:8000/)
 
@@ -107,7 +107,7 @@ To use the Admin:
 - Register a user in the application (You can skip this step if you already have a user).
 - Give the user the admin role by running:
 
-        php artisan voyager:admin <user email>
+        php artisan voyager:admin-user <user email>
         
 - Navigate to [http://localhost:8000/admin](http://localhost:8000/admin).
 - Log in with the user credentials (If not logged in automatically).
