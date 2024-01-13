@@ -17,6 +17,10 @@ return [
     'sent' => 'We have emailed your password reset link!',
     'throttled' => 'Please wait before retrying.',
     'token' => 'This password reset token is invalid.',
+<<<<<<< HEAD
     'user' => "No user found with that email address.",
+=======
+    'user' => 'We cannot find a user with that email address.',
+>>>>>>> origin/master
 
 ];
