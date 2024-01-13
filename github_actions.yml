@@ -1,0 +1,25 @@
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: New Job
+        run: |
+          # Add new commands here
+          # Add any custom deployment commands here
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build project
+        run: |
+          npm install
+          npm run build
+          npm install
+          npm run build
+          npm test
