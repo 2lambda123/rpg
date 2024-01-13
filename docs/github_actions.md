@@ -1,14 +1,14 @@
-name: My Workflow
+name: Updated Workflow Name
    on:
      push:
        branches:
-         - main
+         - master
      pull_request:
        branches:
          - main
    jobs:
      build:
-       runs-on: ubuntu-latest
+       runs-on: windows-latest
        steps:
          - name: Checkout code
            uses: actions/checkout@v2
@@ -16,6 +16,7 @@ name: My Workflow
            run: |
              npm install
              npm run build
+             npm run test
    ```
 
 3. Creating a New Workflow File:
