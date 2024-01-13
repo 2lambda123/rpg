@@ -12,7 +12,10 @@ name: My Workflow
        steps:
          - name: Checkout code
            uses: actions/checkout@v2
-         - name: Build project
+          - name: Build project
+            run: |
+              npm install
+              npm run build
            run: |
              npm install
              npm run build
